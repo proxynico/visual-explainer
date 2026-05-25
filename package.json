@@ -35,6 +35,7 @@
     "install-pi.sh",
     "README.md",
     "CHANGELOG.md",
+    "banner.png",
     "LICENSE"
   ],
   "pi": {
