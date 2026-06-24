@@ -11,41 +11,43 @@ Always define both light and dark palettes via custom properties. Start with whi
   --font-body: 'Outfit', system-ui, sans-serif;
   --font-mono: 'Space Mono', 'SF Mono', Consolas, monospace;
 
-  --bg: #f8f9fa;
-  --surface: #ffffff;
+  /* Catppuccin Latte (light) */
+  --bg: #eff1f5;
+  --surface: #e6e9ef;
   --surface-elevated: #ffffff;
-  --border: rgba(0, 0, 0, 0.08);
-  --border-bright: rgba(0, 0, 0, 0.15);
-  --text: #1a1a2e;
-  --text-dim: #6b7280;
-  --accent: #0891b2;
-  --accent-dim: rgba(8, 145, 178, 0.1);
+  --border: rgba(76, 79, 105, 0.10);
+  --border-bright: rgba(76, 79, 105, 0.18);
+  --text: #4c4f69;
+  --text-dim: #6c6f85;
+  --accent: #8839ef;
+  --accent-dim: rgba(136, 57, 239, 0.10);
   /* Semantic accents for diagram elements */
-  --node-a: #0891b2;
-  --node-a-dim: rgba(8, 145, 178, 0.1);
-  --node-b: #059669;
-  --node-b-dim: rgba(5, 150, 105, 0.1);
-  --node-c: #d97706;
-  --node-c-dim: rgba(217, 119, 6, 0.1);
+  --node-a: #1e66f5;
+  --node-a-dim: rgba(30, 102, 245, 0.10);
+  --node-b: #40a02b;
+  --node-b-dim: rgba(64, 160, 43, 0.10);
+  --node-c: #fe640b;
+  --node-c-dim: rgba(254, 100, 11, 0.10);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1117;
-    --surface: #161b22;
-    --surface-elevated: #1c2333;
-    --border: rgba(255, 255, 255, 0.06);
-    --border-bright: rgba(255, 255, 255, 0.12);
-    --text: #e6edf3;
-    --text-dim: #8b949e;
-    --accent: #22d3ee;
-    --accent-dim: rgba(34, 211, 238, 0.12);
-    --node-a: #22d3ee;
-    --node-a-dim: rgba(34, 211, 238, 0.12);
-    --node-b: #34d399;
-    --node-b-dim: rgba(52, 211, 153, 0.12);
-    --node-c: #fbbf24;
-    --node-c-dim: rgba(251, 191, 36, 0.12);
+    /* Catppuccin Mocha (dark) */
+    --bg: #1e1e2e;
+    --surface: #313244;
+    --surface-elevated: #45475a;
+    --border: rgba(205, 214, 244, 0.06);
+    --border-bright: rgba(205, 214, 244, 0.12);
+    --text: #cdd6f4;
+    --text-dim: #a6adc8;
+    --accent: #cba6f7;
+    --accent-dim: rgba(203, 166, 247, 0.12);
+    --node-a: #89b4fa;
+    --node-a-dim: rgba(137, 180, 250, 0.12);
+    --node-b: #a6e3a1;
+    --node-b-dim: rgba(166, 227, 161, 0.12);
+    --node-c: #fab387;
+    --node-c-dim: rgba(250, 179, 135, 0.12);
   }
 }
 ```
@@ -88,7 +90,7 @@ body {
 
 ## Link Styling
 
-**Never rely on browser default link colors.** The default blue (`#0000EE`) has poor contrast on dark backgrounds. Style links with `color: var(--accent)` and keep underlines for discoverability. On dark backgrounds, use bright accents (`#22d3ee`, `#34d399`, `#fbbf24`). On light backgrounds, use deeper tones (`#0891b2`, `#059669`, `#d97706`).
+**Never rely on browser default link colors.** The default blue (`#0000EE`) has poor contrast on dark backgrounds. Style links with `color: var(--accent)` and keep underlines for discoverability. On dark backgrounds, use bright accents (`#cba6f7`, `#a6e3a1`, `#fab387`). On light backgrounds, use deeper tones (`#8839ef`, `#40a02b`, `#fe640b`).
 
 ## Section / Card Components
 

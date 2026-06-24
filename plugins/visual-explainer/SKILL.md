@@ -1,6 +1,6 @@
 ---
 name: visual-explainer
-description: Generate beautiful, self-contained HTML pages that visually explain systems, code changes, plans, and data. Use when the user asks for a diagram, architecture overview, diff review, plan review, project recap, comparison table, or any visual explanation of technical concepts. Also use proactively when you are about to render a complex ASCII table (4+ rows or 3+ columns) — present it as a styled HTML page instead.
+description: Use when creating a visual explanation as self-contained HTML for diagrams, architecture overviews, diff or plan reviews, project recaps, comparison tables, status matrices, or data summaries.
 license: MIT
 compatibility: Requires a browser to view generated HTML files. Optional surf-cli for AI image generation.
 metadata:
@@ -151,11 +151,11 @@ Load via `<link>` in `<head>`. Include a system font fallback in the `font-famil
 
 **Color tells a story.** Use CSS custom properties for the full palette. Define at minimum: `--bg`, `--surface`, `--border`, `--text`, `--text-dim`, and 3-5 accent colors. Each accent should have a full and a dim variant (for backgrounds). Name variables semantically when possible (`--pipeline-step` not `--blue-3`). Support both themes.
 
-**Forbidden accent colors:** `#8b5cf6` `#7c3aed` `#a78bfa` (indigo/violet), `#d946ef` (fuchsia), the cyan-magenta-pink combination. These are Tailwind defaults that signal zero design intent.
+**Forbidden accent colors:** `#8b5cf6` `#7c3aed` `#a78bfa` (indigo/violet), `#d946ef` (fuchsia), the cyan-magenta-pink combination. These are Tailwind defaults that signal zero design intent. (Catppuccin mauve `#cba6f7`/`#8839ef` is a deliberate exception — a curated palette, not a Tailwind default.)
 
 **Good accent palettes (use these):**
+- Catppuccin Mauve (`#cba6f7` dark / `#8839ef` light) — soft, warm; default house palette
 - Terracotta + sage (`#c2410c`, `#65a30d`) — warm, earthy
-- Teal + slate (`#0891b2`, `#0369a1`) — technical, precise
 - Rose + cranberry (`#be123c`, `#881337`) — editorial, refined
 - Amber + emerald (`#d97706`, `#059669`) — data-focused
 - Deep blue + gold (`#1e3a5f`, `#d4a73a`) — premium, sophisticated
